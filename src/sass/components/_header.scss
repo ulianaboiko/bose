@@ -1,0 +1,24 @@
+.header {
+  background-color: $color-background;
+  padding-top: 64px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logotype {
+  width: 130px;
+  height: 15px;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 77px;
+}
+.nav__link {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
