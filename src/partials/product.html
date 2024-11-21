@@ -1,54 +1,68 @@
 <section class="product">
-  <div class="container product__container">
-    <h2 class="product__titel">bose nc 700</h2>
+  <div class="container__image product__container">
+    <div class="prodyct__info">
+      <h2 class="product__titel">bose nc 700</h2>
+      <img
+        id="image"
+        class="product__photo"
+        src="./images/products/headphones-black.jpg"
+        alt="headphones"
+      />
+      <div class="product__buttons">
+        <div class="product__buttons--container">
+          <button
+            onclick="activateButton(this)"
+            class="button"
+            id="button1"
+          ></button>
+        </div>
+        <div
+          class="product__buttons--container product__buttons--container--white"
+        >
+          <button
+            onclick="activateButton(this)"
+            class="button product__button--white"
+            id="button2"
+          ></button>
+        </div>
+      </div>
+
+      <ul class="product__list">
+        <li class="product__items">
+          <a class="product__link" href="#">Availability in stores</a>
+          <svg class="product__icon">
+            <use
+              href="./images/symbol-defs copy.svg#icon-arrow-up-right2"
+            ></use>
+          </svg>
+        </li>
+        <li class="product__items">
+          <a class="product__link" href="#">Characteristics</a>
+          <svg class="product__icon">
+            <use
+              href="./images/symbol-defs copy.svg#icon-arrow-up-right2"
+            ></use>
+          </svg>
+        </li>
+        <li class="product__items">
+          <a class="product__link" href="#">Payment and delivery methods</a>
+          <svg class="product__icon">
+            <use
+              href="./images/symbol-defs copy.svg#icon-arrow-up-right2"
+            ></use>
+          </svg>
+        </li>
+      </ul>
+      <div class="product__money">
+        <h3 class="product__subtitel">14 999 UAH</h3>
+        <button class="product__money--button draw">order</button>
+      </div>
+    </div>
     <img
       id="image"
-      class="product__photo"
+      class="product__img"
       src="./images/products/headphones-black.jpg"
       alt="headphones"
     />
-    <div class="product__buttons">
-      <div class="product__buttons--container">
-        <button
-          onclick="activateButton(this)"
-          class="button"
-          id="button1"
-        ></button>
-      </div>
-      <div
-        class="product__buttons--container product__buttons--container--white"
-      >
-        <button
-          onclick="activateButton(this)"
-          class="button product__button--white"
-          id="button2"
-        ></button>
-      </div>
-    </div>
-
-    <ul class="product__list">
-      <li class="product__items">
-        <a class="product__link" href="#">Availability in stores</a>
-        <svg class="product__icon">
-          <use href="./images/symbol-defs copy.svg#icon-arrow-up-right2"></use>
-        </svg>
-      </li>
-      <li class="product__items">
-        <a class="product__link" href="#">Characteristics</a>
-        <svg class="product__icon">
-          <use href="./images/symbol-defs copy.svg#icon-arrow-up-right2"></use>
-        </svg>
-      </li>
-      <li class="product__items">
-        <a class="product__link" href="#">Payment and delivery methods</a>
-        <svg class="product__icon">
-          <use href="./images/symbol-defs copy.svg#icon-arrow-up-right2"></use>
-        </svg>
-      </li>
-    </ul>
-    <div class="product__money">
-      <h3 class="product__subtitel">14 999 UAH</h3>
-      <button class="product__money--button">order</button>
-    </div>
   </div>
 </section>

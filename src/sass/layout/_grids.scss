@@ -1,3 +1,6 @@
+body {
+  background-color: $color-background;
+}
 .container {
   min-width: 320px;
   max-width: 1200px;
@@ -6,4 +9,5 @@
 }
 .container__image {
   max-width: 1440px;
+  margin-inline: auto;
 }
