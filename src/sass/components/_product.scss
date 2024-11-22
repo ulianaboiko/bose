@@ -1,16 +1,49 @@
+.product__img {
+  display: none;
+}
+.product {
+  padding: 100px 20px;
+}
 .product__titel {
   font-weight: 600;
   font-size: 30px;
   line-height: 120%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+  margin-bottom: 32px;
   color: $color-text-title;
+}
+.product__photo {
+  margin-bottom: 32px;
+}
+.product__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 50px;
 }
 .product__items {
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
   color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+// .product__link {
+//   position: relative;
+// }
+.product__items::after {
+  content: '';
+  bottom: -25;
+  left: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .product__subtitel {
   font-weight: 600;
@@ -19,6 +52,17 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: $color-marker;
+  margin-bottom: 30px;
+}
+.product__icon {
+  width: 30px;
+  height: 30px;
+  fill: $color-marker;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.product__icon:hover {
+  transform: rotate(360deg);
 }
 .product__money--button {
   font-weight: 600;
@@ -26,13 +70,28 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.9);
-  padding: 17px 114px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  width: 100%;
   background-color: $color-marker;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+}
+.product__money--button:hover {
+  background-color: rgba(240, 248, 255, 0);
+  color: $color-marker;
+  border: 1px solid $color-marker;
+  transition: background-color 0.2s ease;
+  -webkit-box-shadow: 0px 1px 10px 6px rgba(223, 61, 58, 0.31);
+  -moz-box-shadow: 0px 1px 10px 6px rgba(223, 61, 58, 0.31);
+  box-shadow: 0px 1px 10px 6px rgba(223, 61, 58, 0.31);
 }
 .product__buttons {
   display: flex;
   gap: 25px;
   align-items: center;
+  margin-bottom: 40px;
 }
 .button {
   width: 40px;
@@ -47,8 +106,6 @@
 .button.active {
   border-color: $color-marker;
 }
-
-/* Дополнительные стили для белой кнопки */
 .product__button--white {
   background-color: $color-text-primary;
 }
@@ -62,4 +119,53 @@
   background-color: $color-text-title;
   border-radius: 50%;
   border: 2px solid $color-text-primary;
+}
+@media (min-width: 768px) {
+  .product__money--button {
+    width: 35%;
+  }
+}
+@media (min-width: 1200px) {
+  .product__img {
+    display: block;
+  }
+  .product {
+    padding: 100px 0px;
+  }
+  .product__container {
+    margin-left: 13%;
+  }
+  .product__list {
+    max-width: 75%;
+  }
+  .product__photo {
+    display: none;
+  }
+  .container__image {
+    display: flex;
+    justify-content: space-between;
+  }
+  .product__subtitel {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  .product__money--button {
+    padding: 22px 25%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .prodyct__info {
+    width: 100%;
+  }
+  .product__img {
+    display: block;
+    max-width: 700px;
+    max-height: 584px;
+    size: contain;
+  }
 }
