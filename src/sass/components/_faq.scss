@@ -1,0 +1,39 @@
+.faq__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $color-text-title;
+  margin-bottom: 32px;
+}
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.question__number {
+  font-family: $secondFamily;
+  font-size: 20px;
+  line-height: 0.7;
+  color: $color-text-title;
+}
+.question__name {
+  @include color-opacity($color-text-title, 0.8);
+  align-self: flex-start;
+}
+.question__img {
+  width: 32px;
+  height: 32px;
+  @include bg-color-opacity($color-text-title, 0.2);
+  border-radius: 15px;
+}
+.question__icon {
+  fill: $color-text-title;
+}

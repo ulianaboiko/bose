@@ -19,7 +19,7 @@
   align-items: flex-end;
 }
 .footer__link {
-  opacity: 0.3;
+  @include color-opacity($color-text-title, 0.3);
 }
 .number__text {
   display: flex;
@@ -28,7 +28,7 @@
 .number__link {
   font-family: $thirdFamily;
   font-size: 16px;
-  opacity: 0.8;
+  @include color-opacity($color-text-title, 0.8);
 }
 @media (min-width: 480px) {
   .number__text {
