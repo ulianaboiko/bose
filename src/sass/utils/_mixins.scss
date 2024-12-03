@@ -1,0 +1,7 @@
+@mixin color-opacity($color, $opacity) {
+  color: rgba($color, $opacity);
+}
+@mixin bg-color-opacity($color, $opacity) {
+  background-color: rgba($color, $opacity);
+}
+// @include color-opacity або bg-color-opacity($колір-із-зміної, $прозорість);
