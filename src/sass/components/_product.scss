@@ -66,23 +66,38 @@
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.9);
   padding-top: 17px;
   padding-bottom: 17px;
   width: 100%;
-  background-color: $color-marker;
   cursor: pointer;
   position: relative;
-  vertical-align: middle;
+  background-color: $color-marker;
+  border: 2px solid $color-marker;
+  transition: color 0.3s ease;
 }
+
 .product__money--button:hover {
-  background: linear-gradient(90deg, $color-marker, gold, $color-marker);
-  color: $color-text-primary;
-  border: 1px solid $color-marker;
-  -webkit-box-shadow: 0px 1px 10px 6px rgba(223, 61, 58, 0.31);
-  -moz-box-shadow: 0px 1px 10px 6px rgba(223, 61, 58, 0.31);
-  box-shadow: 0px 1px 10px 6px rgba(223, 61, 58, 0.31);
+  color: #fff;
+}
+
+.product__money--button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: $color-background;
+  z-index: 1;
+  transition: right 0.4s ease;
+}
+
+.product__money--button:hover::before {
+  right: 0;
+}
+span {
+  z-index: 3;
 }
 .product__buttons {
   display: flex;
