@@ -1,6 +1,35 @@
+.checkbox{
+    padding-top: 35px;
+
+    display: flex;
+    gap: 5px;
+}
+
+
+
+.checkbox__input{
+background-image: url(../images/form/сheckmark.png);
+   margin-right: 5px;
+}
+
+
 .checkbox__text{
+
     font-weight: 400;
     font-size: 14px;
     line-height: 125%;
-    color: rgba(255, 255, 255, 0.8);
+    color: $color-text-primary;
+}
+.checkbox__text--span{
+    text-decoration: underline;
+text-decoration-skip-ink: none;
+}
+
+
+
+@media (min-width: 1240px) {
+    .checkbox__input{
+ margin-right: 24px;
+    }
+    
 }

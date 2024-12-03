@@ -3,7 +3,28 @@
   max-width: 1200px;
   padding-inline: 15px;
   margin-inline: auto;
+
 }
 .container__image {
   max-width: 1440px;
+}
+
+
+
+@media (min-width: 768px) {
+   
+  .section-form {margin: 0px 60px;
+  }
+}
+
+@media (min-width: 1240px) {
+   
+  .container-form{ 
+    display: flex;
+    width: 960px;
+
+  }
+  .section-form {
+  margin: 0px 190px;
+}  
 }
