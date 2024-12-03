@@ -1,10 +1,7 @@
-.section {
-  display: flex;
-  gap: 100px;
-}
+
 
 .slider-video {
-  flex-basis: 60%;
+
   overflow: hidden;
 }
 
@@ -33,7 +30,7 @@
   background: radial-gradient(77.2% 77.2% at 50% 50%, #363534 0%, #1c1b1b 100%);
   mix-blend-mode: screen;
 
-  min-width: 97%;
+  min-width: 100%;
   height: 240px;
 }
 
