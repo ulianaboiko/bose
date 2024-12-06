@@ -8,13 +8,21 @@
 
 
 .checkbox__input{
-background-image: url(../images/form/сheckmark.png);
+    margin-bottom: 5px;
+    appearance: none;
+    border: 2px solid #e9edfa;
+    width: 30px;
+    height: 27px;
    margin-right: 5px;
 }
 
 
-.checkbox__text{
+.checkbox__input:checked{
+background-image: url(../images/form/сheckmark.png);
+}
 
+.checkbox__text{
+margin-top: 5px;
     font-weight: 400;
     font-size: 14px;
     line-height: 125%;
