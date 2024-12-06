@@ -1,4 +1,13 @@
+.reviews__container{
+    position: relative;
+  }
+  
+
+
 .pagination{
+    right: 80;
+    bottom: 10;
+    position: absolute;
     display: flex;
     gap: 10px;
 }

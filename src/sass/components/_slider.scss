@@ -1,7 +1,6 @@
 
 
 .slider-video {
-
   overflow: hidden;
 }
 
@@ -30,8 +29,8 @@
   background: radial-gradient(77.2% 77.2% at 50% 50%, #363534 0%, #1c1b1b 100%);
   mix-blend-mode: screen;
 
-  min-width: 100%;
-  height: 240px;
+  max-width: 100%;
+
 }
 
 .slider-video__text {
@@ -56,10 +55,26 @@
   min-width: 100%;
 }
 
+.slider-video__video--div{
+  min-width: 278px;
+  min-height: 180px;
+}
+
+.slider-video__video{
+min-width: 100%;
+min-height: 180px;
+}
+
 @media (min-width: 762px) {
-  .slider-video__video {
-    height: 417px;
+  .slider-video__video--div{
+    min-width: 648px;
+    min-height: 417px;
   }
+
+.slider-video__video{
+  min-width: 100%;
+  min-height: 417px
+}
 
   .slider-video__text--none {
     font-weight: 600;
@@ -75,7 +90,7 @@
     line-height: 125%;
   }
 
-  .reviews__container{
+  .reviews__container {
     padding-inline: 60;
   }
 
@@ -86,45 +101,52 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .slider-video__video {
+  width: 920px;
+  height: 590px;
+  }
 
-@media (min-width: 1202px)  {
-    .slider-video__video{
-        height: 590px;
-        width: 920px;
-    }
 
-    .slider-video__text--none1{
-        display: block;
- 
-font-weight: 600;
-font-size: 54px;
-line-height: 120%;
-letter-spacing: 0.02em;
-text-transform: uppercase;
+.slider-video__video--div{
+  max-width: 920px;
+}
 
-    }
-    .slider-video__text--none2{
-        display: none;
-    }
+  .slider-video__div {
+    width: 258px;
+    height: 485px;
+  }
 
-    .slider-video__text{
-       
-font-weight: 600;
-font-size: 28px;
-line-height: 125%;
+  .slider-video__text--none1 {
+    display: block;
 
-    }
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  .slider-video__text--none2 {
+    display: none;
+  }
 
-    .slider-video__text--p{
-   
-font-weight: 400;
-font-size: 20px;
-line-height: 145%;
+  .slider-video__text {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 125%;
+  }
 
-    }
+  .slider-video__text--p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 145%;
+  }
 
-    .reviews__container{
-      padding-inline: 0;
-    }
-
+  .reviews__container {
+    padding-inline: 0;
+  }
+  .slider-video__item {
+    display: flex;
+    gap: 150px;
+  }
 }
