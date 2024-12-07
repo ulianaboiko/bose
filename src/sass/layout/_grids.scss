@@ -1,12 +1,17 @@
-body {
-  background-color: $color-background;
-}
 .container {
   min-width: 320px;
-  max-width: 1200px;
+  max-width: 1090px;
   padding-inline: 15px;
   margin-inline: auto;
 }
-.container__image {
+.container-wide {
   max-width: 1440px;
+  min-width: 320px;
+  padding-inline: 20px;
+  margin-inline: auto;
+}
+@media (min-width: 768px) {
+  .container__wide {
+    padding-inline: 0;
+  }
 }
