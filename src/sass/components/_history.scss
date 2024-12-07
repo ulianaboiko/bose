@@ -57,8 +57,10 @@
     padding: 50px 0px;
   }
   .history__titel--two,
-  .history__text--two {
+  .history__text--two,
+  .history__text--active {
     display: block;
+    display: flex;
   }
   .history__titel,
   .history__text {
@@ -66,14 +68,13 @@
   }
   .history__info--first {
     display: flex;
-    justify-content: last baseline;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
     gap: 15%;
   }
   .flex__container {
     width: 100%;
-    margin-left: 5%;
   }
   .history__photo {
     width: 50%;
@@ -90,7 +91,6 @@
     align-items: center;
     gap: 7%;
     max-width: 1060px;
-    margin: 0 auto;
   }
   .boze {
     display: flex;
@@ -102,8 +102,50 @@
   .history__text--active--two {
     margin-bottom: 30%;
   }
+  .history__container {
+    margin-left: 10%;
+  }
 }
-.history__img {
-  width: 40%;
-  height: 60%;
+@media (min-width: 1060px) {
+  .flex__container {
+    width: 40%;
+  }
+  .history__titel--two {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  .history__text--two {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 145%;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .dreams__titel {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 125%;
+  }
+  .dreams__subtitel {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 70%;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .history__text--active--two {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 145%;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .history__text--activee {
+    display: block;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 145%;
+    color: rgba(255, 255, 255, 0.8);
+  }
 }
