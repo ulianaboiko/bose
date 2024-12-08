@@ -76,7 +76,20 @@
   border: 2px solid $color-marker;
   transition: color 0.3s ease;
 }
-
+.product__money--button {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.9);
+  padding-top: 17px;
+  padding-bottom: 17px;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  background-color: $color-marker;
+  border: 2px solid $color-marker;
+  transition: color 0.3s ease;
+}
 .product__money--button:hover {
   color: #fff;
 }
@@ -96,7 +109,7 @@
 .product__money--button:hover::before {
   right: 0;
 }
-span {
+.product__span {
   z-index: 3;
 }
 .product__buttons {
