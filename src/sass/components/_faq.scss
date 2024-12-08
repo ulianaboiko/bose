@@ -39,15 +39,16 @@
   opacity: 0.8;
   align-self: flex-start;
 }
-.question__img {
+.question__mark {
   width: 32px;
   height: 32px;
-  background-color: $color-text-title;
-  opacity: 0.2;
-  border-radius: 15px;
+  background-color: #e7e7e725;
+  border-radius: 50%;
 }
-.question__icon {
-  fill: $color-text-title;
+.question__span {
+  color: $color-text-title;
+  font-size: 20px;
+  line-height: 0.7;
 }
 @media (min-width: 768px) {
   .faq {
@@ -56,8 +57,7 @@
   .faq__title {
     font-size: 30px;
   }
-
-  .question__img {
+  .question__mark {
     align-self: flex-end;
   }
 }
@@ -74,8 +74,11 @@
   .question__name {
     font-size: 28px;
   }
-  .question__img {
+  .question__mark {
     width: 42px;
     height: 42px;
+  }
+  .question__span {
+    font-size: 28px;
   }
 }
