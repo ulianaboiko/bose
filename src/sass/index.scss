@@ -4,8 +4,16 @@
 @import './utils/variables';
 @import './base/typography';
 @import './layout/grids';
+
+@import './components/header';
+@import './components/hero';
+@import './components/design';
+@import './components/history';
+@import './components/gearantees';
+@import './components/faq';
+@import './components/product';
 @import "./components/title";
 @import "./components/form";
 @import "./components/checkbox";
 @import "./components/button";
-
+@import './components/footer';

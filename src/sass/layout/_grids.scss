@@ -1,7 +1,7 @@
 .container {
   min-width: 320px;
   max-width: 1090px;
-  padding-inline: 20px;
+  padding-inline: 15px;
   margin-inline: auto;
 
 }
@@ -12,7 +12,7 @@
   margin-inline: auto;
 }
 @media (min-width: 768px) {
-  .container-wide {
+  .container__wide {
     padding-inline: 0;
   }
 }
