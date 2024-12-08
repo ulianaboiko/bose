@@ -3,7 +3,6 @@
 @import './base/reset';
 @import './utils/variables';
 @import './base/typography';
-@import './utils/mixins';
 @import './layout/grids';
 
 @import './components/header';
@@ -13,4 +12,8 @@
 @import './components/gearantees';
 @import './components/faq';
 @import './components/product';
+@import "./components/title";
+@import "./components/form";
+@import "./components/checkbox";
+@import "./components/button";
 @import './components/footer';
