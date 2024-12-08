@@ -1,3 +1,3 @@
 import './js/mobil-menu';
+import"./js/slider"
 import './js/product';
-// import './js/product__button';
