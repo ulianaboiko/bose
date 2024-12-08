@@ -1,0 +1,31 @@
+.Feedback-form__input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.Feedback-form__input {
+
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  min-height: 20px;
+  min-width: 100%;
+  margin-bottom: 22px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+input:invalid , textarea:invalid {
+  color: red;
+  border-color: red;
+}
+
+.Feedback-form__input--message {
+  min-height: 65px;
+}
+
+@media (min-width: 1240px) {
+  .Feedback-form__input--message {
+    min-height: 98px;
+    padding-bottom: 90px;
+  }
+}
