@@ -1,39 +1,75 @@
 <section class="product">
-  <div class="container product__container">
-    <h2 class="product__titel">bose nc 700</h2>
-    <img
-      id="image"
-      class="product__photo"
-      src="./images/products/headphones-black.jpg"
-      alt="headphones"
-    />
-    <div class="product__buttons">
-      <div class="product__buttons--container">
-        <button
-          onclick="activateButton(this)"
-          class="button"
-          onclick="activateButton(this)"
-          id="button1"
-        ></button>
+  <div class="container-wide">
+    <div class="product__container">
+      <div class="titel__container">
+        <h2 class="product__titel">bose nc 700</h2>
+        <div class="slider">
+          <ul class="slider__list" data-slider>
+            <li class="slider__item">
+              <img
+                src="./images/products/headphones-black.jpg"
+                alt="headphones"
+                class="slider__photo"
+              />
+            </li>
+            <li class="slider__item">
+              <img
+                src="./images/products/headphones-white.jpg"
+                alt="headphones"
+                class="slider__photo"
+              />
+            </li>
+          </ul>
+        </div>
       </div>
-      <div
-        class="product__buttons--container product__buttons--container--white"
-      >
-        <button
-          onclick="activateButton(this)"
-          class="button product__button--white"
-          id="button2"
-        ></button>
+      <div class="product__info">
+        <h2 class="product__titel--two">bose nc 700</h2>
+        <div data-pagination class="product__buttons">
+          <div class="product__buttons--container">
+            <button data-slide="0" class="button"></button>
+          </div>
+          <div
+            class="product__buttons--container product__buttons--container--white"
+          >
+            <button
+              data-slide="1"
+              class="button product__button--white"
+            ></button>
+          </div>
+        </div>
+        <ul class="product__list">
+          <li class="product__items">
+            <a class="product__link" href="#">Availability in stores</a>
+            <svg class="product__icon">
+              <use
+                href="./images/symbol-defs copy.svg#icon-arrow-up-right2"
+              ></use>
+            </svg>
+          </li>
+          <li class="product__items">
+            <a class="product__link" href="#">Characteristics</a>
+            <svg class="product__icon">
+              <use
+                href="./images/symbol-defs copy.svg#icon-arrow-up-right2"
+              ></use>
+            </svg>
+          </li>
+          <li class="product__items">
+            <a class="product__link" href="#">Payment and delivery methods</a>
+            <svg class="product__icon">
+              <use
+                href="./images/symbol-defs copy.svg#icon-arrow-up-right2"
+              ></use>
+            </svg>
+          </li>
+        </ul>
+        <div class="product__money">
+          <h3 class="product__subtitel">14 999 UAH</h3>
+          <button class="product__money--button draw">
+            <span class="product__span">order</span>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-  <ul class="product__list">
-    <li class="product__items">Availability in stores</li>
-    <li class="product__items">Characteristics</li>
-    <li class="product__items">Payment and delivery methods</li>
-  </ul>
-  <div class="product__money">
-    <h3 class="product__subtitel">14 999 UAH</h3>
-    <button class="product__money--button">order</button>
   </div>
 </section>
