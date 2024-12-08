@@ -35,13 +35,15 @@
   color: $color-text-title;
 }
 .question__name {
-  @include color-opacity($color-text-title, 0.8);
+  color: $color-text-title;
+  opacity: 0.8;
   align-self: flex-start;
 }
 .question__img {
   width: 32px;
   height: 32px;
-  @include bg-color-opacity($color-text-title, 0.2);
+  background-color: $color-text-title;
+  opacity: 0.2;
   border-radius: 15px;
 }
 .question__icon {

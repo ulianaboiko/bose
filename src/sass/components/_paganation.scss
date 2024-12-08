@@ -1,39 +1,39 @@
-.reviews__container{
-    position: relative;
-  }
-.pagination{
-    right: 80;
-    bottom: 10;
-    position: absolute;
-    display: flex;
-    gap: 10px;
+.reviews__container {
+  position: relative;
 }
-.pagination__button{
-font-family: var(--second-family);
-font-weight: 400;
-font-size: 20px;
-line-height: 125%
-color: rgb(223, 61, 58, 0.2);
-position: relative;
+.pagination {
+  right: 80;
+  bottom: 10;
+  position: absolute;
+  display: flex;
+  gap: 10px;
 }
-.pagination__button.active{
-color: $color-marker; 
+.pagination__button {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%;
+  color: rgb(223, 61, 58, 0.2);
+  position: relative;
 }
-.pagination__button::after{
-content: "";
-width: 5px;
-height: 2px;
-background-color: rgb(223, 61, 58, 0.2) ;
-position: absolute;
-bottom: 12;
-right: -5;
+.pagination__button.active {
+  color: $color-marker;
+}
+.pagination__button::after {
+  content: '';
+  width: 5px;
+  height: 2px;
+  background-color: rgb(223, 61, 58, 0.2);
+  position: absolute;
+  bottom: 12;
+  right: -5;
 }
 
-.pagination__button.active::after{
- background-color: $color-marker; 
+.pagination__button.active::after {
+  background-color: $color-marker;
 }
-.pagination__button--active::after{
-    display: none;
+.pagination__button--active::after {
+  display: none;
 }
 .reviews__container {
   position: relative;
