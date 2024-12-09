@@ -1,0 +1,166 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+textarea {
+  border: 0;
+  outline: 0;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+body {
+  font-family: "Gilroy", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+.container__image {
+  max-width: 1440px;
+}
+
+.title__name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #e7e7e7;
+}
+
+.title__text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.checkbox__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  color: rgba(255, 255, 255, 0.8);
+}

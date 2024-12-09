@@ -5,6 +5,7 @@ const handleSlider = event => {
   const target = event.target;
 
   if (target.tagName === 'BUTTON') {
+    console.log("click")
     const index = target.dataset.slide;
     slider.style.transform = `translateX(-${index}00%)`;
 
