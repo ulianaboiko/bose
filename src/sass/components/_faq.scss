@@ -14,19 +14,19 @@
 .faq__list {
   display: flex;
   flex-direction: column;
-  gap: 50px;
-}
-.faq__irem::after {
-  content: '';
-  height: 2px;
-  width: 100%;
-  color: $color-text-title;
+  gap: 25px;
 }
 .question {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 15px;
+  &::after {
+    content: '';
+    position: relative;
+    height: 2px;
+    color: $color-text-title;
+  }
 }
 .question__number {
   font-family: $secondFamily;
@@ -35,6 +35,7 @@
   color: $color-text-title;
 }
 .question__name {
+  flex-grow: 1;
   color: $color-text-title;
   opacity: 0.8;
   align-self: flex-start;
@@ -56,6 +57,11 @@
   }
   .faq__title {
     font-size: 30px;
+    flex-grow: 0;
+    align-self: flex-end;
+  }
+  .question {
+    justify-content: flex-start;
   }
   .question__mark {
     align-self: flex-end;
@@ -67,6 +73,10 @@
   }
   .faq__title {
     font-size: 54px;
+    margin-bottom: 50px;
+  }
+  .faq__list {
+    gap: 85px;
   }
   .question__number {
     font-size: 28px;
