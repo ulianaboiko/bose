@@ -1,8 +1,20 @@
 .container-form {
   margin-top: 15px;
 }
+.title__name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $color-text-title;
+}
+.title__text {
+  color: rgba(255, 255, 255, 0.8);
+}
 .Feedback-form__input::placeholder {
   color: rgba(255, 255, 255, 0.3);
+  font-size: 16px;
 }
 .Feedback-form__input {
   background-color: transparent;
@@ -27,6 +39,12 @@ textarea:invalid {
     margin-inline: 60px;
     margin-top: 100px;
   }
+  .title__name {
+    font-size: 30px;
+  }
+  .title__text {
+    font-size: 20px;
+  }
 }
 @media (min-width: 1200px) {
   .image__container {
@@ -43,5 +61,15 @@ textarea:invalid {
   .Feedback-form__input--message {
     min-height: 98px;
     padding-bottom: 90px;
+  }
+  .title__name {
+    font-size: 54px;
+  }
+  .title__text {
+    font-size: 28px;
+  }
+  .Feedback-form__input::placeholder {
+    font-size: 20px;
+    line-height: 0.7;
   }
 }
