@@ -1,8 +1,7 @@
 // HEADER
 .header {
-  background-color: $color-background;
   padding-top: 30px;
-  padding-bottom: 64px;
+  padding-bottom: 32px;
 }
 // CONTAINER
 .header__container {
@@ -18,7 +17,7 @@
 .nav__list {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  // align-items: left;
   gap: 24px;
 }
 .nav__link {
@@ -26,28 +25,14 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 125%;
-  color: rgba(255, 255, 255, 0.8);
-}
-.nav__link::after {
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: #fff;
-  position: absolute;
-  bottom: -15px;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transform-origin: right;
-}
-.nav__link:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: $color-text-primary;
+  opacity: 0.8;
+  position: relative;
+  transition: opacity, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    opacity: 0.5;
+    transition-duration: 250ms;
+  }
 }
 // MOBIL MENNU
 .header__mobilmenu {
@@ -116,6 +101,7 @@
 @media (min-width: 768px) {
   .header {
     padding-top: 50px;
+    padding-bottom: 50px;
   }
   .nav__link {
     font-size: 16px;
@@ -132,6 +118,10 @@
   }
 }
 @media (min-width: 1200px) {
+  .header {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
   .header__mobilmenu {
     transform: translate(0);
     padding-top: 0;
@@ -140,15 +130,38 @@
     width: auto;
     position: static;
     display: flex;
-    background-color: transparent;
+    box-shadow: none;
   }
   .header__btn {
     display: none;
   }
   .nav__list {
-    display: flex;
     flex-direction: row;
     gap: 77px;
     background-color: $color-background;
+  }
+  .nav__link:hover {
+    opacity: 0.8;
+  }
+  .nav__link::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: right;
+  }
+  .nav__link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
