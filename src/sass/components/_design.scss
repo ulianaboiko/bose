@@ -1,3 +1,7 @@
+// CONTAINER
+.designs {
+  margin-bottom: 52px;
+}
 // TITLE
 .design__title--premium {
   font-family: var(--font-family);
@@ -33,13 +37,11 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 @media (min-width: 768px) {
-  .fullscreen-container {
-    display: flex;
-  }
   .designs {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    margin-bottom: 128px;
   }
   .design {
     min-width: 30%;
@@ -78,6 +80,9 @@ line-height: 145%;
 }
 // DESKTOP
 @media (min-width: 1200px) {
+  .designs {
+    margin-bottom: 170px;
+  }
   .design {
     min-width: 510px;
 
