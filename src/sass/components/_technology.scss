@@ -63,8 +63,8 @@
     background-image: url(../images/technology/technology@2x.webp);
      background-image: url(../images/technology/technology@2x.png);
      background-image: url(../images/technology/technology.webp);
-     width: 700px;
-     height: 486px;
+     min-width: 700px;
+
   }
   .technology__name {
     font-size: 55px;
