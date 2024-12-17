@@ -1,0 +1,62 @@
+<section class="form">
+  <div class="container-wide image__container">
+    <picture class="feedback__image">
+      <source
+        srcset="
+          ./images/backimages/feedback.png    1x,
+          ./images/backimages/feedback@2x.png 2x
+        "
+        srcset="
+          ./images/backimages/feedback.webp    1x,
+          ./images/backimages/feedback@2x.webp 2x
+        "
+      />
+      <img src="./images/backimages/feedback.png" alt="feedback" />
+    </picture>
+  </div>
+  <div class="container container-form">
+    <div class="title">
+      <h2 class="title__name">Feedback</h2>
+      <p class="title__text">
+        We'll help you find the right headphones for you.
+      </p>
+    </div>
+
+    <form class="Feedback-form">
+      <input
+        minlength="3"
+        maxlength="30"
+        class="Feedback-form__input"
+        type="text"
+        name="name"
+        placeholder="Your name"
+      />
+
+      <input
+        class="Feedback-form__input"
+        type="email"
+        name="email"
+        placeholder="Your e-mail"
+      />
+
+      <textarea
+        minlength="10"
+        maxlength="50"
+        class="Feedback-form__input Feedback-form__input--message"
+      
+        name="message"
+        placeholder="Send us a message"
+      ></textarea>
+
+      <div class="checkbox">
+        <input class="checkbox__input" type="checkbox" />
+        <p class="checkbox__text">
+          I agree to the
+          <span class="checkbox__text--span">privacy policy</span>
+        </p>
+      </div>
+
+      <button type="submit" class="Feedback-button">send</button>
+    </form>
+  </div>
+</section>

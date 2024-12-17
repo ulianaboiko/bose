@@ -1,8 +1,11 @@
-.product__img {
-  display: none;
-}
+
+
 .product {
-  padding: 100px 20px;
+  padding: 52px 20px 88px    20px      ;
+}
+
+.container-wide--product{
+  padding: 0px;
 }
 .product__titel,
 .product__titel--two {
@@ -66,26 +69,58 @@
   transform: rotate(360deg);
 }
 .product__money--button {
+  display: flex; 
+  justify-content: center;
+
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.9);
   padding-top: 17px;
   padding-bottom: 17px;
   width: 100%;
-  background-color: $color-marker;
   cursor: pointer;
   position: relative;
-  vertical-align: middle;
+  background-color: $color-marker;
+  border: 2px solid $color-marker;
+  transition: color 0.3s ease;
+}
+.product__money--button {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.9);
+  padding-top: 17px;
+  padding-bottom: 17px;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  background-color: $color-marker;
+  border: 2px solid $color-marker;
+  transition: color 0.3s ease;
 }
 .product__money--button:hover {
-  background: linear-gradient(90deg, $color-marker, gold, $color-marker);
-  color: $color-text-primary;
-  border: 1px solid $color-marker;
-  -webkit-box-shadow: 0px 1px 10px 6px rgba(223, 61, 58, 0.31);
-  -moz-box-shadow: 0px 1px 10px 6px rgba(223, 61, 58, 0.31);
-  box-shadow: 0px 1px 10px 6px rgba(223, 61, 58, 0.31);
+  color: #fff;
+}
+
+.product__money--button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: $color-background;
+  z-index: 1;
+  transition: right 0.4s ease;
+}
+
+.product__money--button:hover::before {
+  right: 0;
+}
+.product__span {
+  z-index: 3;
+
 }
 .product__buttons {
   display: flex;
@@ -141,11 +176,21 @@
   display: none;
 }
 @media (min-width: 768px) {
+  .product {
+    padding: 100px 20px;
+  }
   .product__money--button {
     width: 35%;
+
+
+    display: flex;
+
   }
 }
 @media (min-width: 1200px) {
+  .product {
+    padding: 100px 60px;
+  }
   .product__container {
     display: flex;
     flex-direction: row-reverse;
@@ -159,15 +204,13 @@
   .product__img {
     display: block;
   }
-  .product {
-    padding: 100px 0px;
-  }
+ 
   .product__container {
     margin-left: 10%;
     width: 100%;
   }
   .product__list {
-    max-width: 75%;
+    max-width: 85%;
   }
   .product__photo {
     display: none;
@@ -184,7 +227,7 @@
     text-transform: uppercase;
   }
   .product__money--button {
-    padding: 22px 25%;
+    padding: 22px 33%;
     text-align: center;
     display: flex;
     justify-content: center;

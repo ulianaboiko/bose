@@ -5,7 +5,7 @@
 .footer__lists {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 45px;
   margin-bottom: 52px;
 }
@@ -19,6 +19,7 @@
   align-items: flex-end;
 }
 .footer__link {
+  color: $color-text-title;
   opacity: 0.3;
 }
 .number__text {
@@ -28,6 +29,7 @@
 .number__link {
   font-family: $thirdFamily;
   font-size: 16px;
+  color: $color-text-title;
   opacity: 0.8;
 }
 @media (min-width: 480px) {
