@@ -37,6 +37,7 @@
     padding-right: 0;
     padding-left: 10%;
     align-items: flex-start;
+  
   }
   .technology__name {
     font-size: 30px;
@@ -55,6 +56,15 @@
     padding-bottom: 170px;
     gap: 170px;
     margin-left: 0;
+  }
+
+  .technology__source{
+    background-image: url(../images/technology/technology.png);
+    background-image: url(../images/technology/technology@2x.webp);
+     background-image: url(../images/technology/technology@2x.png);
+     background-image: url(../images/technology/technology.webp);
+     width: 700px;
+     height: 486px;
   }
   .technology__name {
     font-size: 55px;
