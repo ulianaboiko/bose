@@ -1,9 +1,7 @@
-
 .guarantees__container {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   margin-bottom: 25px;
 
   position: relative;
@@ -49,6 +47,7 @@
     margin-bottom: 69px;
     padding-top: 25px;
     position: relative;
+    padding-bottom: 100px;
   }
   .guarantees__container--active {
     margin-bottom: 17px;
@@ -74,11 +73,13 @@
     width: 70%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
+  .guarantees__container {
+    padding-bottom: 170px;
+  }
   .gearantees__photo {
     width: 50%;
     max-height: 50%;
     margin-left: 0;
   }
 }
-
