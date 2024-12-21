@@ -1,13 +1,3 @@
-.reviews__container {
-  position: relative;
-}
-.pagination {
-  right: 80;
-  bottom: 10;
-  position: absolute;
-  display: flex;
-  gap: 10px;
-}
 .pagination__button {
   font-family: var(--second-family);
   font-weight: 400;
@@ -38,9 +28,6 @@
   position: relative;
 }
 .pagination {
-  right: 80;
-  bottom: 10;
-  position: absolute;
   display: flex;
   gap: 10px;
 }
@@ -69,4 +56,16 @@
 }
 .pagination__button--active::after {
   display: none;
+}
+@media (min-width: 1200px) {
+  .slider-video__div {
+    position: relative;
+  }
+  .pagination {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 80;
+    bottom: 10;
+  }
 }
