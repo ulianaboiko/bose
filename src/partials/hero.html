@@ -1,27 +1,35 @@
 <section class="hero">
-    <div class="hero__container">
-        
-        
-        <div class="hero__main">
-            <div class="text__container">
-                <p class="hero__text">
-                    Noise cancellation headphones <br> 
-                    that are capable for a lot of things
-                </p>
-                <p class="hero__text">
-                    Up to 20 hours <br>
-                    of playback
-                </p>
-            </div>
-
-        <div>
-            <h2 class="hero__title">Headphones <br> Bose NC 700</h2>
-            <button class="hero__button">order</button>
-        </div>
-
-        <div class="container__image">
-            <img class="hero__image" src="./images/img goup.webp" alt="headphones">
-        </div>
-        </div>
+  <div class="container-wide hero__container">
+    <div class="hero__texts">
+      <div class="text__container">
+        <p class="hero__text">
+          Noise cancellation headphones <br />
+          that are capable for a lot of things
+        </p>
+        <p class="hero__text">
+          Up to 20 hours <br />
+          of playback
+        </p>
+      </div>
+      <div class="hero__titl">
+        <h2 class="hero__title">
+          Headphones <br />
+          Bose NC 700
+        </h2>
+        <button class="hero__button">
+          <span class="hero__span">order</span>
+        </button>
+      </div>
     </div>
+    <picture class="container__image">
+      <source
+        srcset="./images/hero/hero.jpg 1x, ./images/hero/hero@2x.jpg 2x"
+        type="image/jpeg"
+      />
+      <source
+        srcset="./images/hero/hero.webp 1x, ./images/hero/hero@2x.webp 2x"
+      />
+      <img class="hero__image" src="./images/hero/hero.webp" alt="headphones" />
+    </picture>
+  </div>
 </section>
