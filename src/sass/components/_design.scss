@@ -1,3 +1,10 @@
+// CONTAINER
+.designs {
+  margin-bottom: 52px;
+}
+.design {
+  margin-bottom: 30px;
+}
 // TITLE
 .design__title--premium {
   font-family: var(--font-family);
@@ -6,8 +13,8 @@
   line-height: 120%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-padding-bottom: 32px;
-color:$color-text-title ;
+  padding-bottom: 32px;
+  color: $color-text-title;
 }
 .design__title {
   font-family: var(--font-family);
@@ -17,29 +24,27 @@ color:$color-text-title ;
   color: $color-text-title;
   margin-bottom: 16px;
 }
-
+.design__text--1 {
+  margin-bottom: 24px;
+}
 .design__text {
-
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 14px;
-line-height: 125%;
-color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .container__images {
   min-width: 278px;
-
 }
 
 @media (min-width: 768px) {
-  .fullscreen-container {
-    display: flex;
-  }
   .designs {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    margin-bottom: 128px;
   }
   .design {
     min-width: 30%;
@@ -47,70 +52,55 @@ color: rgba(255, 255, 255, 0.8);
     padding-right: 60px;
   }
   .design__title--premium {
-  
     font-weight: 600;
     font-size: 30px;
     line-height: 120%;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-  
   }
   .design__title {
- 
     font-weight: 600;
     font-size: 20px;
     line-height: 125%;
-  
   }
-.design__photo{
-  min-width: 40%;
-}
-.design__text{
-
-font-weight: 400;
-font-size: 16px;
-line-height: 145%;
-  margin-bottom: 40px;
-}
+  .design__photo {
+    min-width: 40%;
+  }
+  .design__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    margin-bottom: 40px;
+  }
   .container__photo {
     min-width: 40%;
   }
 }
 // DESKTOP
 @media (min-width: 1200px) {
-  .design {
-    min-width: 510px;
-
-max-height: 576px;
-    margin-left: 150px;
-    margin-right: 190px;
+  .designs {
+    margin-bottom: 170px;
   }
- 
   .design__title--premium {
-    
     font-weight: 600;
     font-size: 54px;
     line-height: 120%;
     letter-spacing: 0.02em;
     text-transform: uppercase;
- 
   }
   .design__title {
-
-font-weight: 600;
-font-size: 28px;
-line-height: 125%;
-
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 125%;
   }
   .design__text {
     margin-bottom: 40px;
-font-weight: 400;
-font-size: 20px;
-line-height: 145%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 145%;
   }
   .container__photo {
-    
-min-height: 616px;
+    min-height: 616px;
     min-width: 590px;
   }
 }

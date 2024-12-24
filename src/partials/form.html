@@ -3,18 +3,52 @@
     <picture class="feedback__image">
       <source
         srcset="
-          ./images/backimages/feedback.png    1x,
-          ./images/backimages/feedback@2x.png 2x
+          ./images/backimages/feedback/feedback-mobile.webp    1x,
+          ./images/backimages/feedback/feedback-mobile@2x.webp 2x
         "
-        srcset="
-          ./images/backimages/feedback.webp    1x,
-          ./images/backimages/feedback@2x.webp 2x
-        "
+        media="(max-width: 767px)"
       />
-      <img src="./images/backimages/feedback.png" alt="feedback" />
+      <source
+        srcset="
+          ./images/backimages/feedback/feedback-mobile.png    1x,
+          ./images/backimages/feedback/feedback-mobile@2x.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="
+          ./images/backimages/feedback/feedback-tablet.webp    1x,
+          ./images/backimages/feedback/feedback-tablet@2x.webp 2x
+        "
+        media="(min-width: 768px) and (max-width: 1199px)"
+      />
+      <source
+        srcset="
+          ./images/backimages/feedback/feedback-tablet.png    1x,
+          ./images/backimages/feedback/feedback-tablet@2x.png 2x
+        "
+        media="(min-width: 768px) and (max-width: 1199px) "
+      />
+      <source
+        srcset="
+          ./images/backimages/feedback/feedback.webp    1x,
+          ./images/backimages/feedback/feedback@2x.webp 2x
+        "
+        media="(min-width: 1200px)"
+      />
+
+      <source
+        srcset="
+          ./images/backimages/feedback/feedback.png    1x,
+          ./images/backimages/feedback/feedback@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+
+      <img src="./images/backimages/feedback/feedback.png" alt="feedback" />
     </picture>
   </div>
-  <div class="container container-form">
+  <div class="container container-form" id="form">
     <div class="title">
       <h2 class="title__name"  data-aos="fade-right">Feedback</h2>
       <p class="title__text" data-aos="fade-right">
@@ -24,8 +58,8 @@
 
     <form class="Feedback-form">
       <input
-        minlength="3"
-        maxlength="30"
+        minlength="2"
+        maxlength="60"
         class="Feedback-form__input"
         type="text"
         name="name"
@@ -40,10 +74,9 @@
       />
 
       <textarea
-        minlength="10"
-        maxlength="50"
+        minlength="5"
+        maxlength="100"
         class="Feedback-form__input Feedback-form__input--message"
-      
         name="message"
         placeholder="Send us a message"
       ></textarea>

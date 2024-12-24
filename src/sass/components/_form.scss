@@ -1,3 +1,6 @@
+.form {
+  padding-bottom: 70px;
+}
 .container-form {
   margin-top: 15px;
 }
@@ -13,22 +16,34 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
+  padding-bottom: 15px;
 }
 input:invalid,
 textarea:invalid {
   color: red;
   border-color: red;
 }
+input:valid,
+textarea:valid {
+  color: $color-text-primary;
+  opacity: 0.8;
+}
 .Feedback-form__input--message {
   min-height: 65px;
 }
 @media (min-width: 768px) {
   .container-form {
+    .form {
+      padding-bottom: 100px;
+    }
     margin-inline: 60px;
     margin-top: 100px;
   }
 }
 @media (min-width: 1200px) {
+  .form {
+    padding-bottom: 170px;
+  }
   .image__container {
     padding-inline: 0px;
   }
