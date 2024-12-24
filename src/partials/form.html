@@ -48,7 +48,7 @@
       <img src="./images/backimages/feedback/feedback.png" alt="feedback" />
     </picture>
   </div>
-  <div class="container container-form">
+  <div class="container container-form" id="form">
     <div class="title">
       <h2 class="title__name">Feedback</h2>
       <p class="title__text">
@@ -58,8 +58,8 @@
 
     <form class="Feedback-form">
       <input
-        minlength="3"
-        maxlength="30"
+        minlength="2"
+        maxlength="60"
         class="Feedback-form__input"
         type="text"
         name="name"
@@ -74,8 +74,8 @@
       />
 
       <textarea
-        minlength="10"
-        maxlength="50"
+        minlength="5"
+        maxlength="100"
         class="Feedback-form__input Feedback-form__input--message"
         name="message"
         placeholder="Send us a message"

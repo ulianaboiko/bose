@@ -1,63 +1,68 @@
-.silence {
-    margin-top: 500px;
-    margin-bottom: 500px;
+.silence__cont {
+  padding-bottom: 50px;
 }
 .silence__title {
-    color: $color-text-title;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 120%;
-    letter-spacing: 0.02em;
-    margin-bottom: 32px;
-    text-transform: uppercase;
-    text-align: right;
+  color: $color-text-title;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  text-align: right;
 }
 .silence__container {
-    width: 510px;
-    height: 169px;
+  width: 510px;
+  height: 169px;
 }
 .silence__container2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 32px;
 }
 .silence__container__title {
-    color: $color-text-title;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 125%;
+  color: $color-text-title;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
 }
 .silence__text {
-    color: #ffffffa9;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 145%;
+  color: #ffffffa9;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
 }
-@media (min-width:768px){
-    .silence__title {
-        font-size: 30px;
-    }
-    .silence__container__title {
-        font-size: 20px;
-    }
-    .silence__text {
-        font-size: 16px;
-    }
+@media (min-width: 768px) {
+  .silence__cont {
+    padding-bottom: 100px;
+  }
+  .silence__title {
+    font-size: 30px;
+  }
+  .silence__container__title {
+    font-size: 20px;
+  }
+  .silence__text {
+    font-size: 16px;
+  }
 }
-@media (min-width:1200px) {
-    .silence__title {
-        font-size: 54px;
-        margin-bottom: 50px;
-    }
-    .silence__container2 {
-        margin-bottom: 50px;
-    }
-    .silence__container__title {
-        font-size: 28px;
-    }
-    .silence__text {
-        font-size: 20px;
-    }
+@media (min-width: 1200px) {
+  .silence__cont {
+    padding-bottom: 170px;
+  }
+  .silence__title {
+    font-size: 54px;
+    margin-bottom: 50px;
+  }
+  .silence__container2 {
+    margin-bottom: 50px;
+  }
+  .silence__container__title {
+    font-size: 28px;
+  }
+  .silence__text {
+    font-size: 20px;
+  }
 }

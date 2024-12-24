@@ -16,11 +16,17 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
+  padding-bottom: 15px;
 }
 input:invalid,
 textarea:invalid {
   color: red;
   border-color: red;
+}
+input:valid,
+textarea:valid {
+  color: $color-text-primary;
+  opacity: 0.8;
 }
 .Feedback-form__input--message {
   min-height: 65px;

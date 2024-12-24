@@ -2,6 +2,9 @@
 .designs {
   margin-bottom: 52px;
 }
+.design {
+  margin-bottom: 30px;
+}
 // TITLE
 .design__title--premium {
   font-family: var(--font-family);
@@ -21,7 +24,9 @@
   color: $color-text-title;
   margin-bottom: 16px;
 }
-
+.design__text--1 {
+  margin-bottom: 24px;
+}
 .design__text {
   font-family: var(--font-family);
   font-weight: 400;

@@ -62,14 +62,6 @@
   line-height: 0.7;
 }
 .answer {
-  // display: none;
-  // background-color: #222;
-  // color: #fff;
-  // padding: 10px;
-  // border-radius: 5px;
-  // position: absolute;
-  // z-index: 10;
-  // width: 300px;
   position: absolute;
   top: 50px;
   color: #e7e7e7c0;
@@ -148,6 +140,5 @@
   }
   .question:hover .answer {
     max-height: 140px;
-    // padding: 10px;
   }
 }
