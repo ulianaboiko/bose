@@ -1,5 +1,6 @@
 .product {
-  padding: 0px 20px 88px 20px;
+  padding-bottom: 80px;
+  padding-top: 88px;
 }
 .container-wide--product {
   padding: 0px;
@@ -191,7 +192,7 @@
   .product__container {
     display: flex;
     flex-direction: row-reverse;
-    gap: 150px;
+    gap: 50px;
   }
   .product__titel {
     display: none;
@@ -231,7 +232,7 @@
   }
   .product__info {
     flex-grow: 1;
-    max-width: 400px;
+    width: 50%;
   }
   .titel__container {
     max-width: 700px;
